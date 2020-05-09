@@ -43,7 +43,7 @@
   <div id="app">
     <main class="content on">
       <section class="outer">
-  <article id="post-JavaScript" class="article article-type-post" itemscope
+  <article id="post-JavaScript/JavaScript" class="article article-type-post" itemscope
   itemprop="blogPost" data-scroll-reveal>
 
   <div class="article-inner">
@@ -60,7 +60,7 @@
 
     
     <div class="article-meta">
-      <a href="/2020/04/23/JavaScript/" class="article-date">
+      <a href="/2020/04/23/JavaScript/JavaScript/" class="article-date">
   <time datetime="2020-04-23T12:16:49.000Z" itemprop="datePublished">2020-04-23</time>
 </a>
       
@@ -117,17 +117,13 @@
 </ul>
 <hr>
 <h2 id="打赏"><a href="#打赏" class="headerlink" title="打赏"></a>打赏</h2><p>完全开源且免费，目前由我一个人维护，如果你觉得内容不错，你可以选择继续看，也可以选择适当打赏我，不在于金额多少，而是能让我更有动力去维护。打赏请备注说明，谢谢~</p>
-<ul>
-<li>支付宝<img src="http://127.0.0.1:4000/images/alipay.jpg" width="200" heigth="200">
-</li>
-</ul>
-<ul>
-<li>微信<img src="http://127.0.0.1:4000/images/wechat.jpg" width="200" heigth="200">
+<!-- - 支付宝
+<img src="https://yang-feifei.github.io/images/alipay.jpg" width="200" heigth="200">
 
++ 微信
+<img src="https://yang-feifei.github.io/images/wechat.jpg" width="200" heigth="200"> -->
 
-
-</li>
-</ul>
+<p><img src="/.com//wechat.jpg" alt="支付宝"></p>
 <h1 id="JavaScript基础"><a href="#JavaScript基础" class="headerlink" title="JavaScript基础"></a>JavaScript基础</h1><p>HTML和CSS   京东</p>
 <h2 id="网页、网站和应用程序"><a href="#网页、网站和应用程序" class="headerlink" title="网页、网站和应用程序"></a>网页、网站和应用程序</h2><p>网页：单独的一个页面<br>网站：一些列相关的页面组成到一起<br>应用程序：可以和用户产生交互，并实现某种功能。</p>
 <h2 id="演示JavaScript的强大"><a href="#演示JavaScript的强大" class="headerlink" title="演示JavaScript的强大"></a>演示JavaScript的强大</h2><p><a href="http://impress.github.io/impress.js/" target="_blank" rel="noopener">http://impress.github.io/impress.js/</a><br><a href="http://naotu.baidu.com/" target="_blank" rel="noopener">http://naotu.baidu.com/</a><br><a href="https://codecombat.com/" target="_blank" rel="noopener">https://codecombat.com/</a><br><a href="https://ide.codemao.cn/" target="_blank" rel="noopener">https://ide.codemao.cn/</a></p>
@@ -691,10 +687,10 @@ switch 语句在比较值时使用的是全等操作符, 因此不会发生类�
 
 将这样的所有的作用域列出来，可以有一个结构: 函数内指向函数外的链式结构。就称作作用域链。</code></pre><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 案例1：</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">f2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> num = <span class="number">456</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f3</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">f4</span>(<span class="params"></span>) </span>&#123;    </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="media/06-1.png" alt="06-1"></p>
+<p><img src="/.com//06-1.png" alt="06-1"></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 案例2</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> num = <span class="number">123</span>;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">f2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="built_in">console</span>.log( num );</span><br><span class="line">    &#125;</span><br><span class="line">    f2();</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> num = <span class="number">456</span>;</span><br><span class="line">f1();</span><br></pre></td></tr></table></figure>
 
-<p><img src="media/06-2.png" alt="06-2"></p>
+<p><img src="/.com//06-2.png" alt="06-2"></p>
 <h2 id="预解析"><a href="#预解析" class="headerlink" title="预解析"></a>预解析</h2><blockquote>
 <p>JavaScript代码的执行是由浏览器中的JavaScript解析器来执行的。JavaScript解析器执行JavaScript代码的时候，分为两个过程：预解析过程和代码执行过程</p>
 </blockquote>
@@ -782,10 +778,10 @@ switch 语句在比较值时使用的是全等操作符, 因此不会发生类�
 <li><p>注意：JavaScript中没有堆和栈的概念，此处我们用堆和栈来讲解，目的方便理解和方便以后的学习。</p>
 </li>
 </ul>
-<h4 id="基本类型在内存中的存储"><a href="#基本类型在内存中的存储" class="headerlink" title="基本类型在内存中的存储"></a>基本类型在内存中的存储</h4><p><img src="media/1498288494687.png" alt="1498288494687"></p>
-<h4 id="复杂类型在内存中的存储"><a href="#复杂类型在内存中的存储" class="headerlink" title="复杂类型在内存中的存储"></a>复杂类型在内存中的存储</h4><p><img src="media/1498700592589.png" alt="1498700592589"></p>
-<h4 id="基本类型作为函数的参数"><a href="#基本类型作为函数的参数" class="headerlink" title="基本类型作为函数的参数"></a>基本类型作为函数的参数</h4><p><img src="media/1497497605587-8288640195.png" alt="1497497605587"></p>
-<h4 id="复杂类型作为函数的参数"><a href="#复杂类型作为函数的参数" class="headerlink" title="复杂类型作为函数的参数"></a>复杂类型作为函数的参数</h4><p><img src="media/1497497865969.png" alt="1497497865969"></p>
+<h4 id="基本类型在内存中的存储"><a href="#基本类型在内存中的存储" class="headerlink" title="基本类型在内存中的存储"></a>基本类型在内存中的存储</h4><p><img src="/.com//1498288494687.png" alt="1498288494687"></p>
+<h4 id="复杂类型在内存中的存储"><a href="#复杂类型在内存中的存储" class="headerlink" title="复杂类型在内存中的存储"></a>复杂类型在内存中的存储</h4><p><img src="/.com//1498700592589.png" alt="1498700592589"></p>
+<h4 id="基本类型作为函数的参数"><a href="#基本类型作为函数的参数" class="headerlink" title="基本类型作为函数的参数"></a>基本类型作为函数的参数</h4><p><img src="/.com//1497497605587-8288640195.png" alt="1497497605587"></p>
+<h4 id="复杂类型作为函数的参数"><a href="#复杂类型作为函数的参数" class="headerlink" title="复杂类型作为函数的参数"></a>复杂类型作为函数的参数</h4><p><img src="/.com//1497497865969.png" alt="1497497865969"></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 下面代码输出的结果</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span>(<span class="params">name,age,salary</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">this</span>.name = name;</span><br><span class="line">  <span class="keyword">this</span>.age = age;</span><br><span class="line">  <span class="keyword">this</span>.salary = salary;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params">person</span>) </span>&#123;</span><br><span class="line">  person.name = <span class="string">"ls"</span>;</span><br><span class="line">  person = <span class="keyword">new</span> Person(<span class="string">"aa"</span>,<span class="number">18</span>,<span class="number">10</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person(<span class="string">"zs"</span>,<span class="number">18</span>,<span class="number">1000</span>);</span><br><span class="line"><span class="built_in">console</span>.log(p.name);</span><br><span class="line">f1(p);</span><br><span class="line"><span class="built_in">console</span>.log(p.name);</span><br></pre></td></tr></table></figure>
 
 <p>思考：</p>
@@ -1016,7 +1012,7 @@ switch 语句在比较值时使用的是全等操作符, 因此不会发生类�
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/04/23/JavaScript/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/04/23/JavaScript/JavaScript/" alt="微信分享二维码">
     </div>
 </div>
 
